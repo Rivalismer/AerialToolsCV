@@ -168,7 +168,7 @@ def convert_to_coco_api(ds):
         if "masks" in targets:
             masks = targets["masks"]
             # make masks Fortran contiguous for coco_mask
-            masks = masks[:,0,:,:]
+            # masks = masks[:,0,:,:]
             masks = masks.permute(0, 2, 1).contiguous().permute(0, 2, 1)
         if "keypoints" in targets:
             keypoints = targets["keypoints"]
