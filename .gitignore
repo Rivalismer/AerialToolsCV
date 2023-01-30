@@ -3,3 +3,5 @@ Data/**/*.*
 imgs/**/*.*
 PV01/**/*.*
 PV01
+YOLO_HPC/pv01/**/*.*
+YOLO_HPC/yolov7/**/*.*
