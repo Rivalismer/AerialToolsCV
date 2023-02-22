@@ -1,7 +1,13 @@
 Data/**/*.*
 .ipynb_checkpoints/**/*.*
 imgs/**/*.*
-PV01/**/*.*
-PV01
-YOLO_HPC/pv01/**/*.*
-YOLO_HPC/yolov7/**/*.*
+DL/PV01/**/*.*
+DL/PV01
+DL/YOLO_HPC/pv01/**/*.*
+DL/YOLO_HPC/yolov7/**/*.*
+DL/MASK_HPC/PV-Modules-Faults.v5i.coco-segmentation/**/*.*
+DL/MASK_HPC/detectron2/**/*.*
+DL/YOLO_HPC/yolov7/**/*.*
+PVHawk/**/*.*
+PVHawk/mask_rcnn_ir_weights.h5
+PVHawk/mask_rcnn_rgb_weights.h5
