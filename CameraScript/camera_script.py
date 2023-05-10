@@ -3,7 +3,7 @@ import time
 import serial.tools.list_ports
 import numpy as np
 
-# Define important messages not on mavutil
+# Define important messages not in mavutil
 CAMERA_INFORMATION = 259
 CAMERA_SETTINGS = 260
 STORAGE_INFORMATION = 261
@@ -38,9 +38,9 @@ try:
     print("Heartbeat from system %u component %u" %
         (con.target_system, con.target_component))
 
-    # CUBE Setup
+    # CUBE Setup - if needed
 
-    # Camera setup - might need CCP for this
+    # Camera setup - might need command control protocol (CCP) for this
 
     # Setup for a timer
     start_time = time.monotonic()

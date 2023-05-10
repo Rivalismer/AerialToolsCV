@@ -20,7 +20,7 @@ for port in ports:
 
 # Wait for first heartbeat
 # This sets the system and component ID of remote systems for the link
-con = mavutil.mavlink_connection('COM4')
+con = mavutil.mavlink_connection('/dev/ttyUSB0')
 con.wait_heartbeat()
 print("Heartbeat from system %u component %u" %
     (con.target_system, con.target_component))
