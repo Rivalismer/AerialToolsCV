@@ -1,10 +1,10 @@
-### AerialToolsCV
+# AerialToolsCV
 Repository for the development of AerialTools' Computer Vision algorithm. Note that parts of the PVHawk folder was originally developed by Lukas Bommes in relation to his PhD dissertation. A link to his original work can be found here:
 https://github.com/LukasBommes/PV-Hawk
 
 The rest of this ReadMe will provide a brief overview of the various folders.
 
-# CameraScript
+### CameraScript
 The camera script folder includes various files relating to simple python inputs over MavLink. None of the scripts here are finalised enough to use as-is on the drone, but the commands should be at least close to enough to make such a script. 
 
 - $camera script.py$ was used for testing antenna communication between a laptop and the CUBE. In here you can find a basic connection setup, with a message request and error handling system. It also has a functioning example of taking images through trigger control (i.e. you can also start/stop videotaking).
@@ -20,7 +20,7 @@ The camera script folder includes various files relating to simple python inputs
     - Movement commands, such as setting target waypoints for the drone to travel to
     - How to listen for specific telemetry outputs
 
-# DL
+### DL
 The deep learning (DL) folder is a more "clean" version of the folder used while working on the special course "Computer Vision for Autunomous Aerial Navigation". In general it contains the pipeline for training a yolov7 network, an (almost) functioning MaskRCNN implementation and traditional image analysis methods.
 
 - $ImageAnalysis$ contains an attempted implementation of a contour-detection using traditional methods such as prewitt filter and morphology. However, while the example result performs decently well, this was quickly abandoned due to generalisation issues
@@ -31,5 +31,5 @@ The deep learning (DL) folder is a more "clean" version of the folder used while
 
 - $YOLO HPC$ is meant as a fairly simple plug-and-play folder for re-training the YOLOv7 network on the HPC. While there is a separate guide for this, the main thing to be aware of is that there are 2 HPC scripts within the folder, $yolo setup$ and $yolo test$, which are used for training and testing respectively. 
 
-# PVHawk
+### PVHawk
 This is the folder containing both the PVHawk code developed by Lukas, as well as the minor modifications done by Aerial Tools. Alternatively, it might only contain a setup script, in either case I recommend consulting the PVHawk guide for more information.
